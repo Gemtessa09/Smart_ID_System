@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROL NAATH FOOTBALL FORUM Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: green;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: red;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        h2 {
+            text-align: center;
+            color: yellow;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid brown;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            margin-top: 15px;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>ROL NAATH FOOTBALL FORUM Registration</h2>
+        <form action="/submit_registration" method="post">
+            <!-- Full Name -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Position in the Field -->
+            <label for="position">Position on the Field:</label>
+            <select id="position" name="position" required>
+                <option value="forward">Student</option>
+                <option value="midfielder">Instructor</option>
+                <option value="defender">Assistance</option>
+                <option value="goalkeeper">Department head</option>
+                <option value="other">Others</option>
+            </select>
+
+            <!-- Size -->
+            <label for="size">Size (Shoe/Clothing):</label>
+            <input type="text" id="size" name="size" required>
+
+            <!-- Tell Me About Your Good Side -->
+            <label for="goodSide">Tell Me About Your Good Side:</label>
+            <textarea id="goodSide" name="goodSide" rows="4" required></textarea>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Registration">
+        </form>
+    </div>
+
+</body>
+</html>
