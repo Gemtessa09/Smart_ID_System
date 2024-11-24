@@ -1,0 +1,38 @@
+
+.body{  font-size: 50px;
+
+}
+img{ width: 200px;
+
+}
+
+div {
+  background-color: rgb(215, 122, 122);
+  background-image: url("tree.gif.jpg");
+  width: 1000px;
+  content: counter(name);
+  border: 15px solid green;
+  padding: 50px;
+  margin: 40px;
+  /*text-decoration: underline; */
+  /*text-align: right;*/
+  line-height: 20px;
+  text-transform: capitalize;
+  text-indent: 4em;
+ direction: ltr;
+ unicode-bidi: embed;
+ white-space: pre;
+ font-family: inherit;
+ font-size: x-small;
+ font: bold;
+ font-variant: small-caps;
+ font-weight: bold;
+ list-style-image: url("rtre.png.jpg") ;
+ display:block;
+ visibility: visible;
+ float: none;
+ position: absolute;
+ cursor: copy;
+ z-index: 5;
+}
+
